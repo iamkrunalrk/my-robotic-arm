@@ -29,8 +29,8 @@ catkin_make
 ```
 
 **Clone Required Packages:**
-```
 Clone the darknet_ros repository for YOLOv3:
+```
 cd ~/catkin_ws/src
 git clone --recursive -b updated https://github.com/iamkrunalrk/darknet_ros.git
 ```
@@ -89,7 +89,7 @@ catkin_make --only-pkg-with-deps sim_ros_interface
 ## Installation of Required Packages:
 
 The following packages are essential for the project:
--Darknet ROS: For implementing the YOLOv3 object detection algorithm.
+- Darknet ROS: For implementing the YOLOv3 object detection algorithm.
 - CoppeliaSim: For simulating the robotic arm's movements and interactions.
 - gp7_visualization: Contains the models and descriptions for the Yaskawa GP7 arm.
 
