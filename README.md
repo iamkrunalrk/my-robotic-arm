@@ -29,8 +29,8 @@ catkin_make
 ```
 
 **Clone Required Packages:**
-```
 Clone the darknet_ros repository for YOLOv3:
+```
 cd ~/catkin_ws/src
 git clone --recursive -b updated https://github.com/iamkrunalrk/darknet_ros.git
 ```
