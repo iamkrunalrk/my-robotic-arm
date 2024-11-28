@@ -2,36 +2,40 @@
 
 ## Detailed Instructions on Setting Up ROS and CoppeliaSim
 To successfully implement the robotic arm project, the following environment setup is required:
-Prerequisites:
+**Prerequisites:**
 Operating System: Ubuntu 20.04
 ROS Version: Noetic
 CoppeliaSim Version: 4.1.0 Edu
 ROS DarkNet
 
-ROS Setup:
+**ROS Setup:**
 Install ROS Noetic: Follow the official ROS installation guide for Ubuntu 20.04. This can be done using the following commands:
+```
 sudo apt update
 sudo apt install ros-noetic-desktop-full
+```
 
-Initialize rosdep:
+**Initialize rosdep:**
+```
 sudo rosdep init
 rosdep update
+```
 
-Create a Catkin Workspace:
+**Create a Catkin Workspace:**
 ```
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin_make
 ```
 
-Clone Required Packages:
+**Clone Required Packages:**
 ```
 Clone the darknet_ros repository for YOLOv3:
 cd ~/catkin_ws/src
 git clone --recursive -b updated https://github.com/iamkrunalrk/darknet_ros.git
 ```
 
-Build the workspace:
+**Build the workspace:**
 ```
 cd ~/catkin_ws
 catkin_make
@@ -82,10 +86,12 @@ cd ~/catkin_ws
 catkin_make --only-pkg-with-deps sim_ros_interface
 ```
 
-## Installation of Required Packages
+## Installation of Required Packages:
+
 The following packages are essential for the project:
-•	Darknet ROS: For implementing the YOLOv3 object detection algorithm.
-•	CoppeliaSim: For simulating the robotic arm's movements and interactions.
-•	gp7_visualization: Contains the models and descriptions for the Yaskawa GP7 arm.
+-Darknet ROS: For implementing the YOLOv3 object detection algorithm.
+- CoppeliaSim: For simulating the robotic arm's movements and interactions.
+- gp7_visualization: Contains the models and descriptions for the Yaskawa GP7 arm.
+
 Each package can be installed as described in the previous sections.
 
